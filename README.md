@@ -2,4 +2,3 @@
 App that shows map location with all food trucks on/off campus in Champaign/Urbana
 
 Adrian
-Abhi
