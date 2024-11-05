@@ -1,0 +1,199 @@
+{
+    "Ice_Daddy's": {
+      "name": "Ice Daddy's",
+      "address": "605 S Lake of the Woods Dr, Mahomet, IL 61853",
+      "type": [
+        "Ice Cream Shop",
+        "Food Truck",
+        "Shaved Ice Shop"
+      ],
+      "phone": "(217) 721-9744",
+      "email": "info@icedaddys.com",
+      "website": "http://icedaddys.com/",
+      "menu": "http://icedaddys.com/menu/",
+      "hours": {
+        "Monday": "CLOSED",
+        "Tuesday": "CLOSED",
+        "Wednesday": "4:00 PM - 8:00 PM",
+        "Thursday": "4:00 PM - 8:00 PM",
+        "Friday": "4:00 PM - 9:00 PM",
+        "Saturday": "12:00 PM - 9:00 PM",
+        "Sunday": "1:00 PM - 7:00 PM"
+      }
+    },
+    "Patty_Daddy's": {
+      "name": "Patty Daddy's",
+      "type": "Burger",
+      "website": "https://patty-daddys.square.site/",
+      "menu": "https://patty-daddys.square.site/menu",
+      "hours": {
+        "Monday": "Research Park 11am - 1pm",
+        "Tuesday": "Ginger Ales, Savoy 11am - 1pm",
+        "Wednesday": "Corner of 150/Staley Road 11:30 AM - 1:30 PM",
+        "Thursday": "Mahomet, 605 Lake of the Woods Road 5 PM - 8 PM",
+        "Friday": "U of I College of Veterinary Medicine 10:45 AM - 1:30 PM",
+        "Saturday": "Triptych Brewery 5 PM - 8 PM",
+        "Sunday": "CLOSED"
+      }
+    },
+    "Burrito_King": {
+      "name": "Burrito King",
+      "address": "408 E Green St, Champaign, IL 61820",
+      "type": "Mexican Restaurant",
+      "phone": "(217) 607-0073",
+      "email": "info@burritoking.us",
+      "website": "https://burritoking.us/",
+      "menu": "https://burritoking.us/foodtruck-menu",
+      "hours": {
+        "Monday": "11:00 AM - 2:45 AM",
+        "Tuesday": "11:00 AM - 2:45 AM",
+        "Wednesday": "11:00 AM - 2:45 AM",
+        "Thursday": "11:00 AM - 2:45 AM",
+        "Friday": "11:00 AM - 2:30 AM",
+        "Saturday": "11:00 AM - 2:30 AM",
+        "Sunday": "CLOSED"
+      }
+    },
+    "Briens_Bistro": {
+      "name": "Brien's Bistro",
+      "phone": "(217) 331-6334",
+      "location": "Champaign County, IL",
+      "email": "briensbistro@gmail.com",
+      "website": "https://briensbistro.com/",
+      "menu": "https://briensbistro.com/our-food"
+    },
+    "Daves_Dog": {
+      "name": "Dave’s Dog",
+      "address": "1301 West Springfield Avenue, Urbana, IL 61801",
+      "phone": "(815) 694-6494",
+      "email": "davesdogscu@gmail.com",
+      "hours": {
+        "Monday": "11:00 AM - 2:00 PM",
+        "Tuesday": "11:00 AM - 2:00 PM",
+        "Wednesday": "11:00 AM - 2:00 PM",
+        "Thursday": "11:00 AM - 2:00 PM",
+        "Friday": "11:00 AM - 2:00 PM",
+        "Saturday": "CLOSED",
+        "Sunday": "CLOSED"
+      },
+      "website": "http://davesdogscu.com/"
+    },
+    "Fernandos": {
+      "name": "Fernando's",
+      "address": "15 E Main Street, Downtown Champaign, IL, United States",
+      "hours": "Always open",
+      "email": "fernandosfoodtruck1@gmail.com",
+      "phone": "(217) 255-0210",
+      "type": [
+        "Burritos",
+        "Quesadillas",
+        "Nachos",
+        "Tacos"
+      ]
+    },
+    "Flour_and_Fire_Pizza": {
+      "name": "Flour and Fire Pizza",
+      "type": "Wood-Fired Pizza",
+      "menu": "https://flourandfirepizza.com/menu",
+      "email": "ffirepizza@gmail.com",
+      "hours": {
+        "Oct 2": "U of I Vet Med 10:30am-1:30pm",
+        "Oct 4": "Triptych Brewing 4:30pm-8pm",
+        "Oct 5": "Riggs Beer Company 4:00pm-8pm",
+        "Oct 6": "St. Joe Football 11am-3pm"
+      },
+      "website": "https://flourandfirepizza.com/",
+      "description": "Wood-fired mobile pizzeria serving Neapolitan style pizza to the Champaign-Urbana area"
+    },
+    "Four_American_Grill": {
+      "name": "Four American Grill",
+      "menu": "https://fourbreakfast.com/menu-truck",
+      "description": "The popular Campustown restaurant now has a food truck. We’ve found this one at the Urbana farmer’s market recently. Serving many of the favorites from the restaurant, Four’s food truck has satisfying breakfast-y/brunch-y options."
+    },
+    "Garros_Taste_of_the_City": {
+      "name": "Garro’s Taste of the City",
+      "address": "Corner of Washington and Lierman, Urbana, IL",
+      "type": [
+        "Chicago-style Food Truck"
+      ],
+      "email": "garrostasteofthecity@gmail.com",
+      "website": "https://www.facebook.com/GarrosTasteoftheCity",
+      "menu": "Check the Facebook link for menu details",
+      "hours": {
+        "Wednesday": "12:00 PM - 9:00 PM",
+        "Thursday": "12:00 PM - 9:00 PM",
+        "Friday": "12:00 PM - 9:00 PM",
+        "Saturday": "12:00 PM - 9:00 PM",
+        "Sunday": "CLOSED"
+      },
+      "note": "Serving Italian Beef, Beef Pizza Puff, Burgers, Beef Polish, Gyros, and more."
+    },
+    "Juanitos_Tacos": {
+      "name": "Juanito’s Tacos",
+      "address": "1302 N Cunningham Ave, Champaign, IL",
+      "phone": "447-410-9093",
+      "type": "Mexican Tacos",
+      "instagram": "https://www.instagram.com/juanitos.tacos/"
+    },
+    "Jurassic_Grill": {
+      "name": "Jurassic Grill Champaign",
+      "address": "404 E Green St, Champaign, IL, United States",
+      "phone": "(217) 954-1871",
+      "email": "jurassicgrill@hotmail.com",
+      "website": "https://jurassicgrillchampaign.com/",
+      "menu": "https://jurassicgrillchampaign.com/menu-1",
+      "hours": {
+        "Monday": "11:00 AM - 3:00 AM",
+        "Tuesday": "11:00 AM - 3:00 AM",
+        "Wednesday": "11:00 AM - 3:00 AM",
+        "Thursday": "11:00 AM - 3:00 AM",
+        "Friday": "11:00 AM - 3:00 AM",
+        "Saturday": "11:00 AM - 3:00 AM",
+        "Sunday": "11:00 AM - 12:00 AM"
+      }
+    },
+    "Just_Bee_Acai": {
+      "name": "Just Bee Açaí",
+      "hours": {
+        "Monday": "10:30 AM - 3:30 PM",
+        "Tuesday": "10:30 AM - 3:30 PM",
+        "Wednesday": "10:30 AM - 3:30 PM",
+        "Thursday": "10:30 AM - 3:30 PM",
+        "Friday": "10:30 AM - 2:30 PM",
+        "Saturday": "Cart only",
+        "Sunday": "CLOSED"
+      },
+      "description": "Acai",
+      "website": "https://www.justbeeacaicu.com/",
+      "menu": "https://www.justbeeacaicu.com/menu"
+    },
+    "Kona_Ice": {
+      "name": "Kona Ice of Champaign",
+      "phone": "(217) 974-5662",
+      "email": "whanner@kona-ice.com",
+      "type": "Shaved Ice"
+    },
+    "La_Paloma_Food_Truck": {
+      "name": "La Paloma Food Truck",
+      "phone": "(217) 352-1532",
+      "website": "http://lapalomachampaign.com",
+      "menu": "http://lapalomachampaign.com/menu"
+    },
+    "Mo_Burritos": {
+      "name": "Mo's Burritos",
+      "address": "116 E Main St, Urbana, IL",
+      "type": "Mexican Food Truck",
+      "website": "https://mosburritos.com",
+      "menu": "https://mosburritos.com/menu",
+      "phone": "(217) 328-9330",
+      "hours": {
+        "Monday": "11:00 AM - 7:00 PM",
+        "Tuesday": "11:00 AM - 7:00 PM",
+        "Wednesday": "11:00 AM - 7:00 PM",
+        "Thursday": "11:00 AM - 7:00 PM",
+        "Friday": "11:00 AM - 7:00 PM",
+        "Saturday": "11:00 AM - 7:00 PM",
+        "Sunday": "CLOSED"
+      }
+    }
+  }
