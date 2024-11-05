@@ -38,7 +38,7 @@ class LoginPage extends StatelessWidget {
                 Expanded(
                   child: Align(
                    alignment: Alignment.centerLeft,
-                    child: ElevatedButton(
+                    child: TextButton(
                      onPressed: () {},
                      child: const Text("Forgot Password?"),
                     ),
