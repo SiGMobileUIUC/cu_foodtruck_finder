@@ -6,9 +6,17 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF13294B),
       appBar: AppBar(
-        title: const Text("Login"),
-        backgroundColor: Colors.blueGrey,
+        title: const Text(
+          'Login',
+          style: TextStyle(
+            fontFamily: 'CustomFont',
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        backgroundColor: const Color(0xFFE84A27),
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -20,6 +28,8 @@ class LoginPage extends StatelessWidget {
                 labelText: "Username",
                 prefixIcon: Icon(Icons.person),
                 border: OutlineInputBorder(),
+                filled: true,
+                fillColor: Colors.white,
               ),
             ),
             const SizedBox(height: 20),
@@ -28,32 +38,21 @@ class LoginPage extends StatelessWidget {
                 labelText: "Password",
                 prefixIcon: Icon(Icons.lock),
                 border: OutlineInputBorder(),
+                filled: true,
+                fillColor: Colors.white,
               ),
               obscureText: true,
             ),
             const SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Expanded(
-                  child: Align(
-                   alignment: Alignment.centerLeft,
-                    child: TextButton(
-                     onPressed: () {},
-                     child: const Text("Forgot Password?"),
-                    ),
-                 ),
-                ),
-                Expanded(
-                child: Align(
-                  alignment: Alignment.centerRight,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: const Text("Login"),
-                  ),
-                ),
-               ),
-              ],
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text("Login"),
+            ),
+            const SizedBox(height: 10),
+            const Text("Don't have an account?"),
+            TextButton(
+              onPressed: () {},
+              child: const Text("Create one now"),
             ),
           ],
         ),
