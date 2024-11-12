@@ -1,25 +1,33 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    
-    void setToSignUpPage(BuildContext context) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const LoginPage()), //Change LoginPage to SignUp Page when able
-      );
-    }
+  State<LoginPage> createState() => _LoginPageState();
+}
 
-    void setToHomePage(BuildContext context) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const LoginPage()), //Change LoginPage to Home Page when able
-      );
-    }
-    
+class _LoginPageState extends State<LoginPage> {
+  String? errorMessage;
+
+  void setToSignUpPage(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) => const LoginPage()), //Change LoginPage to SignUp Page when able
+    );
+  }
+
+  void loginActivated(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) => const LoginPage()), //Change LoginPage to Home Page when able
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF13294B),
       appBar: AppBar(
@@ -60,7 +68,7 @@ class LoginPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () => setToHomePage(context),
+              onPressed: () => loginActivated(context),
               child: const Text("Login"),
             ),
             const SizedBox(height: 10),
