@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'register.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -16,9 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   void setToSignUpPage(BuildContext context) {
     Navigator.push(
       context,
-      MaterialPageRoute(
-          builder: (context) =>
-              const LoginPage()), //Change LoginPage to SignUp Page when able
+      MaterialPageRoute(builder: (context) => const RegisterPage()),
     );
   }
 
@@ -34,7 +33,8 @@ class _LoginPageState extends State<LoginPage> {
     String username = usernameController.text;
     String password = passwordController.text;
 
-    if (username != "" && password != "") { // Add login credentials check logic here
+    if (username != "" && password != "") {
+      // Add login credentials check logic here
       Navigator.push(
         context,
         MaterialPageRoute(
