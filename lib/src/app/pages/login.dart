@@ -1,25 +1,55 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    
-    void setToSignUpPage(BuildContext context) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const LoginPage()), //Change LoginPage to SignUp Page when able
-      );
-    }
+  State<LoginPage> createState() => _LoginPageState();
+}
 
-    void setToHomePage(BuildContext context) {
+class _LoginPageState extends State<LoginPage> {
+  String? errorMessage;
+
+  final TextEditingController usernameController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
+  void setToSignUpPage(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+          builder: (context) =>
+              const LoginPage()), //Change LoginPage to SignUp Page when able
+    );
+  }
+
+  @override
+  void dispose() {
+    // Dispose of controllers when no longer needed to free up resources
+    usernameController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }
+
+  void loginActivated(BuildContext context) {
+    String username = usernameController.text;
+    String password = passwordController.text;
+
+    if (username != "" && password != "") { // Add login credentials check logic here
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const LoginPage()), //Change LoginPage to Home Page when able
+        MaterialPageRoute(
+            builder: (context) =>
+                const LoginPage()), //Change LoginPage to Home Page when able
       );
+    } else {
+      setState(() {
+        errorMessage = "Incorrect username or password";
+      });
     }
-    
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF13294B),
       appBar: AppBar(
@@ -38,8 +68,9 @@ class LoginPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const TextField(
-              decoration: InputDecoration(
+            TextField(
+              controller: usernameController,
+              decoration: const InputDecoration(
                 labelText: "Username",
                 prefixIcon: Icon(Icons.person),
                 border: OutlineInputBorder(),
@@ -48,8 +79,9 @@ class LoginPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            const TextField(
-              decoration: InputDecoration(
+            TextField(
+              controller: passwordController,
+              decoration: const InputDecoration(
                 labelText: "Password",
                 prefixIcon: Icon(Icons.lock),
                 border: OutlineInputBorder(),
@@ -58,9 +90,18 @@ class LoginPage extends StatelessWidget {
               ),
               obscureText: true,
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
+            if (errorMessage != null)
+              Text(
+                errorMessage!,
+                style: const TextStyle(
+                  color: Colors.red,
+                  fontSize: 16,
+                ),
+              ),
+            const SizedBox(height: 10),
             ElevatedButton(
-              onPressed: () => setToHomePage(context),
+              onPressed: () => loginActivated(context),
               child: const Text("Login"),
             ),
             const SizedBox(height: 10),
