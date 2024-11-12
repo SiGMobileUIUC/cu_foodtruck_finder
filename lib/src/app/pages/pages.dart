@@ -1,26 +1,85 @@
-// export 'package:hnh/app/pages/event/event_view.dart';
-// export 'package:hnh/app/pages/events/events_view.dart';
-// export 'package:hnh/app/pages/home/home_view.dart';
-// export 'package:hnh/app/pages/local_places/local_places_view.dart';
-// export 'package:hnh/app/pages/login/login_view.dart';
-// export 'package:hnh/app/pages/map/map_view.dart';
-// export 'package:hnh/app/pages/register/register_view.dart';
-// export 'package:hnh/app/pages/sponsors/sponsors_view.dart';
-// export 'package:hnh/app/pages/user_events/user_events_view.dart';
-// export 'package:hnh/app/pages/web/web_view.dart';
-// export 'package:hnh/app/pages/forgot_pw/forgot_pw_view.dart';
+// pages.dart
+import 'package:flutter/material.dart';
 
+class CuisinesPage extends StatelessWidget {
+  const CuisinesPage({super.key});
 
-// class Pages {
-//   static const String home = '/home';
-//   static const String login = '/login';
-//   static const String register = '/register';
-//   static const String map = '/map';
-//   static const String events = '/events';
-//   static const String event = '/event';
-//   static const String userEvents = '/userEvents';
-//   static const String sponsors = '/sponsors';
-//   static const String localPlaces = '/localPlaces';
-//   static const String web = '/web';
-//   static const String forgot = '/forgotPw';
-// }
+  @override
+  Widget build(BuildContext context) {
+    final List<String> cuisines = ['Mexican', 'Italian', 'Chinese', 'Indian'];
+
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Cuisines'),
+      ),
+      body: GridView.builder(
+        padding: const EdgeInsets.all(8.0),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          crossAxisSpacing: 8,
+          mainAxisSpacing: 8,
+          childAspectRatio: 3 / 2,
+        ),
+        itemCount: cuisines.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              print('Selected cuisine: ${cuisines[index]}');
+            },
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey[300],
+                borderRadius: BorderRadius.circular(8),
+              ),
+              alignment: Alignment.center,
+              child: Text(
+                cuisines[index],
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+}
+
+class MapPage extends StatelessWidget {
+  const MapPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Map'),
+      ),
+      body: const Center(
+        child: Icon(
+          Icons.map,
+          size: 150,
+          color: Colors.grey,
+        ), // Placeholder for a map widget
+      ),
+    );
+  }
+}
+
+class MorePage extends StatelessWidget {
+  const MorePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('More'),
+      ),
+      body: const Center(
+        child: Text('More options coming soon!'),
+      ),
+    );
+  }
+}
