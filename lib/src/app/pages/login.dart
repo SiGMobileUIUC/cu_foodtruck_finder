@@ -5,6 +5,21 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
+    void setToSignUpPage(BuildContext context) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginPage()), //Change LoginPage to SignUp Page when able
+      );
+    }
+
+    void setToHomePage(BuildContext context) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => const LoginPage()), //Change LoginPage to Home Page when able
+      );
+    }
+    
     return Scaffold(
       backgroundColor: const Color(0xFF13294B),
       appBar: AppBar(
@@ -45,14 +60,24 @@ class LoginPage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () => setToHomePage(context),
               child: const Text("Login"),
             ),
             const SizedBox(height: 10),
-            const Text("Don't have an account?"),
+            const Text(
+              "Don't have an account?",
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
             TextButton(
-              onPressed: () {},
-              child: const Text("Create one now"),
+              onPressed: () => setToSignUpPage(context),
+              child: const Text(
+                "Create one now",
+                style: TextStyle(
+                  color: Color(0xFFE84A27),
+                ),
+              ),
             ),
           ],
         ),
