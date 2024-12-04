@@ -1,4 +1,7 @@
 // import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
+// import 'register.dart';
+// >>>>>>> main
 
 // class LoginPage extends StatefulWidget {
 //   const LoginPage({super.key});
@@ -21,6 +24,13 @@
 //               const LoginPage()), //Change LoginPage to SignUp Page when able
 //     );
 //   }
+//   void setToSignUpPage(BuildContext context) {
+//     Navigator.push(
+//       context,
+//       MaterialPageRoute(builder: (context) => const RegisterPage()),
+//     );
+//   }
+// >>>>>>> main
 
 //   @override
 //   void dispose() {
@@ -35,6 +45,20 @@
 //     String password = passwordController.text;
 
 //     if (username != "" && password != "") { // Add login credentials check logic here
+//       Navigator.push(
+//         context,
+//         MaterialPageRoute(
+//             builder: (context) =>
+//                 const LoginPage()), //Change LoginPage to Home Page when able
+//       );
+//     } else {
+//       setState(() {
+//         errorMessage = "Incorrect username or password";
+//       });
+//     }
+//   }
+//     if (username != "" && password != "") {
+//       // Add login credentials check logic here
 //       Navigator.push(
 //         context,
 //         MaterialPageRoute(
